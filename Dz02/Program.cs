@@ -1,15 +1,20 @@
-﻿Console.WriteLine("Введите число: ");
-int N = Convert.ToInt32(Console.ReadLine());
-if (N < 100)
+﻿void ThirdNumver()
 {
-    Console.WriteLine("Третьего числа нет ");
-}
-else
-{    
-    while (N >= 1000)
+int N = Convert.ToInt32(Console.ReadLine());
+
+    if (N < 100)
     {
-            N = N / 10;
-        
+        Console.WriteLine("Третьей цифры нет ");
     }
-    Console.WriteLine(N % 10);
+    else
+    {    
+        while (N >= 1000)
+        {
+                N = N / 10;
+            
+        }
+        Console.WriteLine(N % 10);
+    }
 }
+Console.WriteLine("Введите число: ");
+ThirdNumver();
